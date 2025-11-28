@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 import axios from "axios"
+import { Toaster } from "@/components/ui/sonner"
 
 
 
@@ -54,6 +55,8 @@ export default function LoginPage() {
                 <CardHeader>
                     <CardTitle className="text-center">Acessar Sistema</CardTitle>
                 </CardHeader>
+
+                <Toaster richColors closeButton />
 
                 <CardContent>
                     <form onSubmit={handleLogin} className="space-y-4">
